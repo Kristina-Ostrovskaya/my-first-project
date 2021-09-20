@@ -1,5 +1,5 @@
 .main-photo{
-  background-image: url("../images/map_main_400.jpg");
+  background-image: url("map_main_400.jpg");
   height: 400px;
   background-color: white;
 }
@@ -73,7 +73,7 @@
   }
   .main-photo{
     height: 250px;
-    background-image: url("../images/map_main_250.jpg.jpg");
+    background-image: url("map_main_250.jpg.jpg");
 }
 .discription{
   width: 100%;
