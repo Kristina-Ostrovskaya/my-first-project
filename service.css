@@ -298,8 +298,10 @@
   h1{
     font-size: .8rem;
   }
-  .cash{
+    .cash{
     font-size: .8rem;
+    color: #a67a62;
+    opacity: .05;
   }
   li{
     font-size: .8rem;
