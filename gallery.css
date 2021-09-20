@@ -1,0 +1,381 @@
+  /*главное фото + название*/
+  .main-photo{
+    background-position-y: bottom;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/main_photo_gallery.jpg");
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    border-bottom: .5px #a67a62 solid;
+  }
+  .main-photo_box{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    position: relative;
+    background-color: #f6d6c3;
+    top: 25%;
+    left: 52%;  
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px #a67a62 double;
+    width: 30%;
+    height: 45%;
+    box-shadow: 6px 6px 6px #a67a62;
+    font-family: 'Taviraj', serif;
+    text-align: center;
+    transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+  }
+  .main-photo_discription-max{
+    font-size: 4em;
+    font-weight: bold;
+    margin: 2%;
+    -webkit-animation: main-photo_discription-max 4s ease-in-out alternate infinite;
+    animation: main-photo_discription-max 4s ease-in-out alternate infinite;
+  }
+  @keyframes main-photo_discription-max {
+    0% {
+      transform: scale(1.2);   
+    }
+    25% {
+      transform: scale(.7);   
+    }
+    75% {
+      transform: scale(0);   
+    }
+    100% {
+      transform: scale(-1);   
+    }
+  }
+  @-webkit-keyframes main-photo_discription-max {
+    0% {
+      -webkit-transform: scale(1.2);   
+    }
+    25% {
+      -webkit-transform: scale(.7);   
+    }
+    75% {
+      -webkit-transform: scale(0);   
+    }
+    100% {
+      -webkit-transform: scale(-1);   
+    }
+  }
+  .main-photo_discription-min{
+    font-size: 1em;
+  }
+  .main-photo_discription-max:hover{
+    -webkit-transform: scaleX(-1.2);
+    transform: scaleX(-1.2);
+  }
+  hr{
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  /*ПМ бровей*/
+
+  button{
+    font-family: 'Taviraj', serif;
+    background-color: #a67a62;
+    border-top: .5px #a67a62 solid;
+    border-bottom: .5px #a67a62 solid;
+    border-right: none;
+    border-left:none;
+    width: 70%;
+    color: white;
+    box-shadow: 0 0 .6em #a67a62;
+    cursor: pointer;
+  }
+  .gallery_name{
+    margin: 2% auto 1%;
+    text-align: center;
+    display: block;
+    width: 70%;
+    font-size: 40px;
+  }
+  .gallery_name:hover .md{
+    display: none;
+  }
+  .gallery_name_button_brow:hover, .gallery_name:hover{
+    border-color: black;
+    color: black;
+  }
+  .gallery_name_button_brow{
+    margin-left: 90%;
+    margin-bottom: 1%;
+    text-align: center;
+    width: 7%;
+    font-size:20px;
+    border-top: 4px #a67a62 double;
+    border-bottom: 4px #a67a62 double;
+    box-shadow: none;
+    -webkit-animation: gallery_name_button_brow 3s linear alternate-reverse infinite;
+    animation: gallery_name_button_brow 3s linear alternate-reverse infinite;
+  }
+  @-webkit-keyframes gallery_name_button_brow{
+    0% {
+      -webkit-transform: translateY(0);   
+    }
+    33%{
+      -webkit-transform: translateY(-10px);   
+    }
+    66%{
+      -webkit-transform: translateY(0);   
+    }
+    100% {
+      -webkit-transform: translateY(10px); 
+    }
+  }
+  @keyframes gallery_name_button_brow{
+    0% {
+      transform: translateY(0);   
+    }
+    33%{
+      transform: translateY(-10px);   
+    }
+    66%{
+      transform: translateY(0);   
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
+
+  /*Галерея*/
+  .gallery_wrap{
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: #eff3f2;
+    padding: 2%;
+    border-top: .5px #a67a62 solid;
+    border-bottom: .5px #a67a62 solid;
+    margin: 0 0 180px 0;
+    animation: gallery_wrap 3s linear;
+  }
+  .md{
+    display: block;
+  }
+  .md1{
+    margin: 0;
+  }
+
+  @keyframes gallery_wrap{
+    0% {
+      opacity: 0.3;
+    }
+    60% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  ul{
+    width: 100%;
+    height: auto;
+  }
+  li{
+    list-style-type: none;
+    width: 28%;
+    margin: 2%;
+    overflow: hidden;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  li{
+    -webkit-animation: li linear;
+    animation: li linear;
+    opacity: 0.7;
+  }
+  li:hover{
+    transform: scale(1.1);
+    transition: 3s;
+    opacity: 1;
+    box-shadow: 10px 5px 5px #a67a62;
+  }
+  .gallery_item{
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (max-width:1280px){
+  .main-photo{
+      height: 400px;
+      background-image: url("../images/main_photo_gallery.jpg");
+    }
+  .main-photo_discription-max{
+    font-size: 2em;
+  }
+  .sale{
+    margin: 40px auto 30px;
+  }
+  .sale_heading{
+    font-size: 40px;
+    margin: 10px;
+  }
+}
+   /*ПМ бровей*/
+   button{
+    width: 70%;
+  }
+  .gallery_name{
+    width: 70%;
+    font-size: 34px;
+  }
+  .gallery_name_button_brow{
+    margin-left: 88%;
+    width: 9%;
+    font-size: 16px;
+  }
+
+
+  @media (max-width:768px){
+
+   /*ПМ бровей*/
+   button{
+    width: 60%;
+  }
+  .gallery_name{
+    width: 90%;
+    font-size: 28px;
+  }
+  .gallery_name_button_brow{
+    margin-left: 84%;
+    width: 12%;
+    font-size: 14px;
+    -webkit-animation: gallery_name_button_brow 2s linear  alternate infinite;
+    animation: gallery_name_button_brow 2s linear alternate infinite;
+  }
+  @-webkit-keyframes gallery_name_button_brow {
+    0% {
+      -webkit-transform: translateX(0);   
+    }
+    33%{
+      -webkit-transform: translateX(-10px);   
+    }
+    66%{
+      -webkit-transform: translateX(0);   
+    }
+    100% {
+      -webkit-transform: translateX(10px); 
+    }
+  }
+  @keyframes gallery_name_button_brow {
+    0% {
+      transform: translateX(0);   
+    }
+    33%{
+      transform: translateX(-10px);   
+    }
+    66%{
+      transform: translateX(0);   
+    }
+    100% {
+      transform: translateX(10px);
+    }
+  }
+
+  /*Главное фото*/
+  .main_photo{
+    height: 250px;
+    background-image: url("../images/main_photo_gallery_250.jpg");
+  }
+  .main-photo_box{
+    top: 30%;
+    right: 15%;
+    box-shadow: 6px 6px 6px #a67a62;
+    height: 40%;
+  }
+  .main-photo_discription-max{
+    font-size: 1em;
+  }
+  .main-photo_discription-min{
+    font-size: .5em;
+  }
+  .main-photo_discription-max:hover{
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+  }
+
+    /*Галерея*/
+    li{
+      width: 45%;
+    }
+    li:last-child{
+      display: none;
+    }
+    .footer_wrap{
+      margin-top: -170px;
+    }
+
+  @media (max-width:480px){
+
+     /*ПМ бровей*/
+     button{
+      width: 80%;
+    }
+    .gallery_name{
+      width: 80%;
+      font-size: 24px;
+    }
+    .gallery_name_button_brow{
+      margin-left: 76%;
+      width: 18%;
+      font-size: 10px;
+    }
+
+  /*Главное фото*/
+  .main-photo_box{
+    width: 40%;
+    height: 30%;
+    background-color: white;
+  }
+  .main-photo_discription-max {
+    font-size: 1em;
+  }
+
+  @media (max-width:320px){
+
+  /*Главное фото*/
+  .main-photo_box{
+    width: 40%;
+    height: 30%;
+  }
+  .main_photo{
+    height: 250px;
+    background-image: url("../images/main_photo_gallery_250.jpg");
+  }
+  .main-photo_discription-max {
+    font-size: 1em;
+  }
+         /*ПМ бровей*/
+         button{
+          width: 80%;
+        }
+        .gallery_name{
+          width: 80%;
+          font-size: 14px;
+        }
+        .gallery_name_button_brow{
+          margin-left: 82%;
+          width: 16%;
+          font-size: 8px;
+        }
+}
+  }}

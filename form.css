@@ -1,0 +1,188 @@
+.main-photo{
+  height: 500px;
+}
+.name_form{
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+  margin: 10px 0 0;
+  background-color: #a67a62;
+  width: 100%;
+}
+form{
+  display: block;
+  border: 3px #d69273 solid;
+  padding: 10px;   
+  width: 60%; 
+  box-sizing: border-box;
+  margin: 20px auto 180px auto;
+}
+.header{
+  display: block;
+  position: relative;
+  background-color: #d69273;
+  text-align: center;
+  color: white;
+  border: none;
+  height: 65px;
+  padding: 10px;
+}
+.fa-ellipsis{
+  color: black;
+}
+.header_name{
+  color: black;
+  display: inline-block;
+  margin: 0 8px;
+  font-size: 2.5em;
+  box-sizing: content-box;
+  font-weight: 400;
+}
+.name, .email, .tel, .time, .date{
+  display: block;
+  position: relative;
+  margin: 20px;
+}
+input{
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 2px #a8a8a8 solid;
+  padding: 0 0 0 5px;
+  box-sizing: border-box;
+  font-family: 'Taviraj', serif;
+  cursor: pointer;
+  background-color: white;
+}
+.name_image{
+  background: url(https://raw.githubusercontent.com/Kristina-Ostrovskaya/For-learning/main/face.png) no-repeat right;
+  background-size: 40px;
+}
+.email_image{
+  background: url(https://raw.githubusercontent.com/Kristina-Ostrovskaya/For-learning/main/latter.png) no-repeat right;
+  background-size: 40px;
+}
+.tel_image{
+  background: url(https://raw.githubusercontent.com/Kristina-Ostrovskaya/For-learning/main/mobile.png) no-repeat right;
+  background-size: 40px;
+}
+input::placeholder{
+  font-weight: 400;
+  color: #85817f;
+}
+.name_input, .email_input, .tel_input, .time_input, .date_input{
+  margin: 10px 0;
+  padding: 0;
+}
+.button{
+  text-align: center;
+}
+input:focus{
+  border-radius: 10px;
+  border: 2px solid black;
+  color: black;
+  outline: 0;
+}
+button{
+  background-color: #d69273;
+  border-radius: 5px;
+  border: none;
+  margin: 10px auto;
+  width: 20%;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #a67a62;
+}
+.button_submite{
+  color: black;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  font-size: 2em;
+  font-weight: 400;
+}
+.button_submite:hover{
+  color: white;
+  transform: scale(1.2);
+  transition: 1s linear;
+}
+.name_button{
+    font-weight: 600;
+    font-size: 20px;
+}
+.conteiner{
+    margin: 0;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+@media (max-width:768px){
+  .name_form{
+    font-size: 1em;
+    margin: 5px 0 0;
+  }
+  .main-photo{
+    height: 400px;
+  }
+  .main-photo_box{
+    width: 40%;
+  }
+  input{
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px #a8a8a8 solid;
+    padding: 0 0 0 5px;
+    box-sizing: border-box;
+    font-family: 'Taviraj', serif;
+  }
+  .header_name{
+    font-size: 1.5em;
+  }
+  .button_submite{
+    font-size: 1.5em;
+  }
+  .name_button{
+    font-size: 16px;
+    }
+  button{
+    width: 30%;
+    }
+}
+@media (max-width:480px){
+  form{
+    width: 90%;
+    margin: 20px auto 150px auto;
+  }
+  input{
+    height: 40px;
+    font-size: 16px;
+  }
+  .header{
+    height: 50px;
+    padding: 5px;
+  }
+  .name_image, .email_image, .tel_image{
+    background: none;
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    width: 30px;
+    height: 30px;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+  width: 30px;
+  height: 30px;
+}
+}

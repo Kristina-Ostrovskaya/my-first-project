@@ -1,0 +1,327 @@
+  .conteiner{
+    margin: 0;
+  }
+  
+  /*главное фото + название*/
+  .main-photo{
+    height: 550px;
+    background-image: url("../images/main_photo_service.jpg");
+    background-color: #e3dfde;
+  }
+  .main-photo_box{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    position: relative;
+    top: 20%;
+    left: 52%;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px #a67a62 double;
+    width: 30%;
+    height: 50%;
+    box-shadow: 6px 6px 6px #a67a62;
+    font-family: 'Taviraj', serif;
+    text-align: center;
+    transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+  }
+  .main-photo_discription-max{
+    font-size: 4em;
+    font-weight: bold;
+    margin: 2%;
+    -webkit-animation: main-photo_discription-max 4s ease-in-out alternate infinite;
+    animation: main-photo_discription-max 4s ease-in-out alternate infinite;
+  }
+  @keyframes main-photo_discription-max {
+    0% {
+      transform: scale(1.2);   
+    }
+    25% {
+      transform: scale(.7);   
+    }
+    75% {
+      transform: scale(0);   
+    }
+    100% {
+      transform: scale(-1);   
+    }
+  }
+  @-webkit-keyframes main-photo_discription-max {
+    0% {
+      -webkit-transform: scale(1.2);   
+    }
+    25% {
+      -webkit-transform: scale(.7);   
+    }
+    75% {
+      -webkit-transform: scale(0);   
+    }
+    100% {
+      -webkit-transform: scale(-1);   
+    }
+  }
+  .main-photo_discription-min{
+    font-size: 1em;
+  }
+  .main-photo_discription-max:hover{
+    -webkit-transform: scaleX(-1.2);
+    transform: scaleX(-1.2);
+  }
+  hr{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .choose_service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .md3{
+    margin: 0 0 160px;
+  }
+  .service_brow, .service_eye, .service_lip{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    margin: .5%;
+    text-align: center;
+  }
+  .service_name{
+    display: inline-block;
+    width: 30%;
+    background-color: #f6f5f3;
+    font-family: 'Merienda', cursive;
+    font-size: 3rem;
+    font-weight: 400;
+    padding: 3% 0;
+    color: #844b2c;
+    box-shadow: inset .05em 0 black;
+  }
+  .service_discription{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    padding: 3% 0;
+  }
+  h1{
+    border-bottom: .5px #a97f5f solid;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  h1:hover{
+    color: #d3b8a7;
+  }
+  .service_cash{
+    margin: 0 1%;
+  }
+  .service_cash:hover > p{
+    opacity: 1;
+  }
+  .cash{
+    font-size: 4rem;
+    color: #a67a62;
+    opacity: .05;
+  }
+  span{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    letter-spacing: .8rem;
+  }
+  small{
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+  .md2{
+    text-align: center;
+    margin: 1% auto;
+    width: 100%;
+    background-color: #a97f5f;
+  }
+  ul{
+    width: 100%;
+    height: 100%;
+    margin: 1% auto 0 1%;
+  }
+  li{
+    text-align: center;
+    margin-bottom: 1%;
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+  li:hover{
+    color: #874938;
+    transform: scale(1.2);
+    font-weight: 600;
+  }
+  li a{
+    color: black;
+  }
+
+
+  @media (max-width:1500px){
+  .service_name{
+    font-size: 3rem;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+  .cash{
+    font-size: 3rem;
+  }
+  span{
+    font-size: 1.5rem;
+    letter-spacing: .6rem;
+  }
+  li{
+    font-size: 1.1rem;
+  }
+  }
+
+  @media (max-width:1280px){
+    /*Главное фото*/
+  .main-photo_discription-max{
+    font-size: 3em;
+  }
+  
+  .service_name{
+    font-size: 2.5rem;
+  }
+  h1{
+    font-size: 1.2rem;
+  }
+  .cash{
+    font-size: 2rem;
+  }
+  span{
+    font-size: 1.2rem;
+    letter-spacing: .5rem;
+  }
+  li{
+    font-size: 1rem;
+  }
+}
+
+
+  @media (max-width:768px){  
+    /*Главное фото*/
+    .main-photo{
+      display: block;
+      height: 350px;
+      background-image: url("../images/main_photo_service_350.jpg");
+    }
+    .main-photo_box{
+      top: 30%;
+      right: 15%;
+      box-shadow: 6px 6px 6px #a67a62;
+      height: 40%;
+    }
+    .main-photo_discription-max{
+      font-size: 2em;
+    }
+    .main-photo_discription-min{
+      font-size: .5em;
+    }
+    .main-photo_discription-max:hover{
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+    }
+    .service_name{
+      font-size: 2rem;
+    }
+    h1{
+      font-size: 1rem;
+    }
+    .cash{
+      font-size: 1rem;
+    }
+    span{
+      font-size: 1rem;
+      letter-spacing: .4rem;
+    }
+    li{
+      font-size: .9rem;
+    }
+    .md3{
+      margin: 0 0 120px;
+    }
+    /*Услуги*/
+    .service_brow, .service_eye, .service_lip{
+      display: flex;
+      flex-direction: column;
+    }
+    .service_name{
+      width: 100%;
+      font-size: 1.5rem;
+      padding: 1% 0;
+      box-shadow: inset 0 .05em 0 black;
+    }
+    .service_discription{
+      width: 100%;
+      padding: 1% 0;
+    }
+}
+
+
+
+@media (max-width:480px){
+      /*Главное фото*/
+  .main-photo{
+    height: 350px;
+  }
+  .main-photo_box{
+    background-color: white;
+    width: 40%;
+    height: 30%;
+  }
+  .main-photo_discription-max {
+    font-size: 1em;
+  }
+  .service_name{
+    font-size: 1.6rem;
+  }
+  h1{
+    font-size: .8rem;
+  }
+  .cash{
+    font-size: .8rem;
+  }
+  li{
+    font-size: .8rem;
+  }
+}
+
+
+@media (max-width:320px){
+
+    /*Главное фото*/
+    .main-photo{
+      height: 400px;
+    }
+    .main-photo_box{
+      background-color: white;
+      width: 40%;
+      height: 30%;
+    }
+    .main-photo_discription-max {
+      font-size: 1em;
+    }
+    .service_name{
+      font-size: 1.3rem;
+    }
+    h1{
+      font-size: .6rem;
+    }
+    .cash{
+      font-size: .6rem;
+    }
+}
