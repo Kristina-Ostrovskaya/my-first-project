@@ -5,7 +5,7 @@
   /*главное фото + название*/
   .main-photo{
     height: 550px;
-    background-image: url("../images/main_photo_service.jpg");
+    background-image: url("main_photo_service.jpg");
     background-color: #e3dfde;
   }
   .main-photo_box{
@@ -217,7 +217,7 @@
     .main-photo{
       display: block;
       height: 350px;
-      background-image: url("../images/main_photo_service_350.jpg");
+      background-image: url("main_photo_service_350.jpg");
     }
     .main-photo_box{
       top: 30%;
