@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>gallery.html</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Taviraj:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/46469f5f97.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+<div class="conteiner">
+      <!-- хедер(лэйбл) с сайдбаром -->
+  <header class="label">
+    <div class="label_name">
+      <a href="index.html" title="Главная">
+        <div class="label_line_1">TOP FACE
+        <p class="label_line_2">PERMANENT MAKE UP</p>
+        </div>
+        <i class="fas fa-angle-double-down md5 fa-2x"></i>
+      </a>
+    </div>
+    <div class="page">  
+      <div class="page_wrap">
+        <div class="page_wrap-main">
+          <a class="page_main" href="index.html" title="Главная">Главная</a>
+        </div>
+      </div>
+      <div class="page_wrap">
+        <div class="page_wrap-service">
+          <a class="page_service" href="service.html" title="Услуги">Услуги</a>
+        </div>
+      </div>
+      <div class="page_wrap">
+        <div class="page_wrap-gallery">
+          <a class="page_gallery" href="gallery.html" title="Галерея">Галерея</a>
+        </div>
+      </div>
+      <div class="page_wrap">
+        <div class="page_wrap-reserv">
+          <a class="page_reserv" href="form.html" title="Галерея">Запись</a>
+        </div>
+      </div>
+      <div class="page_wrap">
+        <div class="page_wrap-help">
+          <a class="page_help" href="help.html" title="Помощь">Помощь</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    <!-- Главное фото -->
+  <div class="main-photo">
+    <div class="main-photo_box">
+      <p class="main-photo_discription-max">GALLERY</p><hr>
+      <p class="main-photo_discription-min"><strong>TOP FACE</strong> <sub>permanent make up</sub></p>
+    </div>
+  </div>
+
+  
+      <!-- Галерея -->
+  <button class="gallery_name">BROW Permanent</button>
+  <button class="gallery_name_button_brow">Смотреть</button>
+
+  <div class="gallery_wrap md1">
+    <div class="gallery">
+      <ul class="gallery_item">
+        <li><img src="images/1.jpg" alt="image"></li>
+        <li><img src="images/3.jpg" alt="image"></li>
+        <li><img src="images/2.jpg" alt="image"></li>
+        <li><img src="images/4.jpg" alt="image"></li>
+        <li><img src="images/5.jpg" alt="image"></li>
+        <li><img src="images/6.jpg" alt="image"></li>
+        <li><img src="images/7.jpg" alt="image"></li>
+        <li><img src="images/8.jpg" alt="image"></li>
+        <li><img src="images/9.jpg" alt="image"></li>
+      </ul> 
+    </div>
+
+  <script>
+    var coll = document.getElementsByClassName("gallery_name_button_brow");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+  </script>
+  </div>
+
+  <button class="gallery_name">EYES Permanent</button>
+
+  <div class="gallery_wrap md md1">
+    <div class="gallery">
+      <ul class="gallery_item">
+        <li><img src="images/13.jpg" alt="image"></li>
+        <li><img src="images/14.jpg" alt="image"></li>
+        <li><img src="images/15.jpg" alt="image"></li>
+      </ul> 
+    </div>
+  </div>
+
+  <button class="gallery_name">LIPS Permanent</button>
+
+  <div class="gallery_wrap md">
+    <div class="gallery">
+      <ul class="gallery_item">
+        <li><img src="images/10.jpg" alt="image"></li>
+        <li><img src="images/11.jpg" alt="image"></li>
+        <li><img src="images/12.jpg" alt="image"></li>
+      </ul> 
+    </div>
+  </div>
+  
+</div>
+
+    <div class="footer_wrap">
+      <footer class="footer">
+        <div class="copy">
+          <div class="copy-img"><img class="label_footer" src="images/label_name.jpg" alt="label_name"></div>
+          <div><p class="copy-discription">&copy; Все права защищены. "TOP FACE", 2021</p></div>
+        </div>
+        <div class="address">
+          <div class="address-border">
+            <i class="fas fa-globe-americas"></i> г. Новополоцк, ул.Дружбы, 8
+          </div>
+          <div class="address-border-tel">
+            <i class="fas fa-phone-volume"></i>
+            <a class="address-phone" href="tel:+375336509776">+ 375(33)650-97-76</a>
+          </div>
+          <div class="address-border-taplink">
+            <i class="fas fa-envelope"></i> 
+            <a class="address_taplink" href="service.html" title="Прайс на услуги">Прайс на услуги</a>
+          </div>
+        </div>
+        <div class="about-studio">
+          <div class="about-studio-border">
+            <p>О СТУДИИ</p>
+          </div>
+          <div class="about-studio-border">
+            <p>Студия №1 в г. Новополоцк</p>
+          </div>
+          <div class="web_links">
+            <div class="web_links-border">
+              <a class="web_links-instagram" href="https://www.instagram.com/top_face__permanent/" title="top_face__permanent">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+             </div>
+            <div class="web_links-border">
+              <a class="web_links-telegram" href="https://telegram.me/kris_ostrovskaya">
+                <i class="fab fa-telegram-plane fa-2x"></i>
+              </a>
+            </div>
+            <div class="web_links-border">
+              <a class="web_links-whatsapp" href="https://wa.me/375336509776">
+                <i class="fab fa-whatsapp fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+      
+</body>
+</html>

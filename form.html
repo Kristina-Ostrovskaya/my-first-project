@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>form.html</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Taviraj:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/46469f5f97.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+<div class="conteiner">
+      <!-- хедер(лэйбл) с сайдбаром -->
+  <header class="label">
+    <div class="label_name">
+      <a href="index.html" title="Главная">
+        <div class="label_line_1">FORM
+        <p class="label_line_2">PERMANENT MAKE UP</p>
+        </div>
+        <i class="fas fa-angle-double-down md5 fa-2x"></i>
+      </a>
+    </div>
+    <div class="page">  
+      <div class="page_wrap">
+        <div class="page_wrap-main">
+          <a class="page_main" href="index.html" title="Главная">Главная</a>
+        </div>
+      </div>
+      <div class="page_wrap">
+        <div class="page_wrap-service">
+          <a class="page_service" href="service.html" title="Услуги">Услуги</a>
+        </div>
+      </div>
+      <div class="page_wrap">
+        <div class="page_wrap-gallery">
+          <a class="page_gallery" href="gallery.html" title="Галерея">Галерея</a>
+        </div>
+      </div>
+      <div class="page_wrap">
+        <div class="page_wrap-reserv">
+          <a class="page_reserv" href="form.html" title="Галерея">Запись</a>
+        </div>
+      </div>
+      <div class="page_wrap">
+        <div class="page_wrap-help">
+          <a class="page_help" href="help.html" title="Помощь">Помощь</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    <!-- Главное фото -->
+  <div class="main-photo">
+    <div class="main-photo_box">
+      <p class="main-photo_discription-max">FORM</p><hr>
+      <p class="main-photo_discription-min"><strong>TOP FACE</strong> <sub>permanent make up</sub></p>
+    </div>
+  </div>
+
+  <div class="name_form">Оставить заявку можно заполнив форму для записи либо позвонив по телефону</div>    
+        <!-- Блок с формой -->
+        <div>
+            <form> 
+              <div class="header">
+                <i class="fas fa-ellipsis-h fa-2x"></i>
+                <h1 class="header_name"> RESERVE</h1>
+                <i class="fas fa-ellipsis-h fa-2x"></i>
+              </div>
+          
+              <div class="name">
+                <label for="text_name" class="name_button">First/Last name</label>
+                <div class="name_input">
+                  <input id="text_name" name="text-name" type="text" placeholder="Input your name" class="name_image">
+                </div>
+              </div>
+          
+              <div class="email">
+                <label for="email" class="name_button">Email:</label>
+                <div class="email_input">
+                  <input id="email" name="email" type="email" placeholder="Input your E-mail" class="email_image">
+                </div>
+              </div>
+          
+              <div class="tel">
+                <label for="tel" class="name_button">Phone number</label>
+                <div class="tel_input">
+                  <input id="tel" name="tel" type="tel" placeholder="+375 (00) 000 - 00 - 00" pattern="\+375[0-9]{2}[0-9]{3}-[0-9]{2}-[0-9]{3}" class="tel_image">
+                </div>
+              </div>
+
+              <div class="date">
+                <label for="date" class="name_button">Date</label>
+                <div class="date_input">
+                  <input id="date" name="date" type="date" value="2021-09-18" step="1"
+                  max="2022-10-31" min="2021-09-30">
+                </div>
+              </div>
+
+              <div class="time">
+                <label for="time" class="name_button">Time</label>
+                <div class="time_input">
+                  <input id="time" name="time" type="time" value="08:00" min="08:00" max="20:00" class="time_padding">
+                </div>
+              </div>
+          
+              <div class="button ">
+                  <button type="button" class="button_submite">SEND</button>
+              </div>
+          
+            </form> 
+          </div>
+
+                  <!-- Футер -->
+
+    <div class="footer_wrap">
+      <footer class="footer">
+        <div class="copy">
+          <div class="copy-img"><img class="label_footer" src="images/label_name.jpg" alt="label_name"></div>
+          <div><p class="copy-discription">&copy; Все права защищены. "TOP FACE", 2021</p></div>
+        </div>
+        <div class="address">
+          <div class="address-border">
+            <i class="fas fa-globe-americas"></i> г. Новополоцк, ул.Дружбы, 8
+          </div>
+          <div class="address-border-tel">
+            <i class="fas fa-phone-volume"></i>
+            <a class="address-phone" href="tel:+375336509776">+ 375(33)650-97-76</a>
+          </div>
+          <div class="address-border-taplink">
+            <i class="fas fa-envelope"></i> 
+            <a class="address_taplink" href="service.html" title="Прайс на услуги">Прайс на услуги</a>
+          </div>
+        </div>
+        <div class="about-studio">
+          <div class="about-studio-border">
+            <p>О СТУДИИ</p>
+          </div>
+          <div class="about-studio-border">
+            <p>Студия №1 в г. Новополоцк</p>
+          </div>
+          <div class="web_links">
+            <div class="web_links-border">
+              <a class="web_links-instagram" href="https://www.instagram.com/top_face__permanent/" title="top_face__permanent">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+             </div>
+            <div class="web_links-border">
+              <a class="web_links-telegram" href="https://telegram.me/kris_ostrovskaya">
+                <i class="fab fa-telegram-plane fa-2x"></i>
+              </a>
+            </div>
+            <div class="web_links-border">
+              <a class="web_links-whatsapp" href="https://wa.me/375336509776">
+                <i class="fab fa-whatsapp fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+</div>     
+</body>
+</html>
