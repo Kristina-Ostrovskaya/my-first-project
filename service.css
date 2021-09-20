@@ -301,7 +301,7 @@
     .cash{
     font-size: .8rem;
     color: #a67a62;
-    opacity: .05;
+    opacity: 1;
   }
   li{
     font-size: .8rem;
