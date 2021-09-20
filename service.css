@@ -75,7 +75,9 @@
     margin: 0 auto;
   }
   .choose_service{
-    display: flex;
+    display: flex;    
+    display: -ms-flexbox;
+    display: -webkit-flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -106,7 +108,9 @@
   }
   .service_discription{
     justify-content: space-around;
-    display: flex;
+    display: flex;    
+    display: -ms-flexbox;
+    display: -webkit-flex;
     flex-direction: row;
     width: 70%;
     padding: 3% 0;
