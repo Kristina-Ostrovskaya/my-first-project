@@ -100,7 +100,7 @@ button:hover{
   text-align: center;
   margin: auto;
   padding: 10px;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 400;
 }
 .button_submite:hover{
@@ -152,7 +152,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-size: 1.5em;
   }
   .button_submite{
-    font-size: 1.5em;
+    font-size: 1em;
   }
   .name_button{
     font-size: 16px;
