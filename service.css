@@ -128,8 +128,8 @@
   }
   .service_cash:hover > p{
     opacity: 1;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
   }
   .cash{
     font-size: 4rem;
