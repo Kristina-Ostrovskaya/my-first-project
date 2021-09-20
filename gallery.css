@@ -6,7 +6,7 @@
     left: 0;
     width: 100%;
     height: 400px;
-    background-image: url("../images/main_photo_gallery.jpg");
+    background-image: url("main_photo_gallery.jpg");
     background-color: #ffffff;
     background-repeat: no-repeat;
     border-bottom: .5px #a67a62 solid;
@@ -217,7 +217,7 @@
   @media (max-width:1280px){
   .main-photo{
       height: 400px;
-      background-image: url("../images/main_photo_gallery.jpg");
+      background-image: url("main_photo_gallery.jpg");
     }
   .main-photo_discription-max{
     font-size: 2em;
@@ -294,7 +294,7 @@
   /*Главное фото*/
   .main_photo{
     height: 250px;
-    background-image: url("../images/main_photo_gallery_250.jpg");
+    background-image: url("main_photo_gallery_250.jpg");
   }
   .main-photo_box{
     top: 30%;
@@ -359,7 +359,7 @@
   }
   .main_photo{
     height: 250px;
-    background-image: url("../images/main_photo_gallery_250.jpg");
+    background-image: url("main_photo_gallery_250.jpg");
   }
   .main-photo_discription-max {
     font-size: 1em;
