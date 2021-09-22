@@ -183,13 +183,20 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   .name_image, .email_image, .tel_image{
     background: none;
   }
-  input[type="date"]::-webkit-calendar-picker-indicator {
-    width: 30px;
-    height: 30px;
+   input[type="date"]{
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
     min-height: 1.2em; 
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    width: 30px;
+    height: 30px;
 }
+     input[type="time"]{
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    min-height: 1.2em; 
+  }
 input[type="time"]::-webkit-calendar-picker-indicator {
   width: 30px;
   height: 30px;
